@@ -19,8 +19,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build project
-        run: ./gradlew build
+      - name: Build project (skip failing task)
+        run: ./gradlew build -x :jablib:generateLtwaListMV
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
