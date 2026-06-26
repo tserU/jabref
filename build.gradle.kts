@@ -4,13 +4,13 @@ plugins {
     id("org.openrewrite.rewrite") version "7.35.0"
     id("org.itsallcode.openfasttrace") version "3.1.2"
     id("org.cyclonedx.bom") version "3.2.4"
-    id "org.sonarqube" version "7.3.1.8318"
+    id("org.sonarqube") version "7.3.1.8318"
 }
 
 sonar {
   properties {
-    property "sonar.projectKey", "tserU_jabref"
-    property "sonar.organization", "tseru"
+    property("sonar.projectKey", "tserU_jabref")
+    property("sonar.organization", "tseru")
   }
 }
 // OpenRewrite should rewrite all sources
