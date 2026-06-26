@@ -11,6 +11,7 @@ sonar {
   properties {
     property("sonar.projectKey", "tserU_jabref")
     property("sonar.organization", "tseru")
+    property("sonar.host.url", "https://sonarcloud.io")
   }
 }
 // OpenRewrite should rewrite all sources
